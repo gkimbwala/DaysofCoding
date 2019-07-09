@@ -1,0 +1,39 @@
+pragma solidity ^0.5.1;
+/**
+ * @title Day 1 of 21 days of Code
+ * @dev gkimbwala@gmail.com
+ * 
+ */
+
+  contract daysofCode_Day1 {
+ /**
+  * @dev Adds two numbers and return the sum of the numbers.
+  */
+  
+   uint256 private firstNumber;
+   uint256 private secondNumber;
+    
+    function setFirstNumber(uint256 newFirstNumber) public {
+        firstNumber= newFirstNumber;
+    }
+    
+    function getFirstNumber() public view returns (uint256){
+        return firstNumber;
+    }
+    
+    function setSecondNumber(uint256 newSecondNumber) public {
+        secondNumber= newSecondNumber;
+    }
+    
+    function getSecondNumber()public view returns (uint256){
+        return secondNumber;
+    }
+  
+  
+    function add(uint256 _firstNumber, uint256 _secondNumber) internal pure returns (uint256) {
+    uint256 _sum= _firstNumber + _secondNumber;
+    require(_sum >= _firstNumber);
+
+    return _sum;
+     }
+    }
