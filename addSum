@@ -13,19 +13,19 @@ pragma solidity ^0.5.1;
    uint256 private firstNumber;
    uint256 private secondNumber;
     
-    function setFirstNumber(uint256 newFirstNumber) public {
+    function setFirstNumber(uint256 newFirstNumber) private {
         firstNumber= newFirstNumber;
     }
     
-    function getFirstNumber() public view returns (uint256){
+    function getFirstNumber() private view returns (uint256){
         return firstNumber;
     }
     
-    function setSecondNumber(uint256 newSecondNumber) public {
+    function setSecondNumber(uint256 newSecondNumber) private {
         secondNumber= newSecondNumber;
     }
     
-    function getSecondNumber()public view returns (uint256){
+    function getSecondNumber() private view returns (uint256){
         return secondNumber;
     }
   
