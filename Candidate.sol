@@ -1,3 +1,5 @@
+//Dev: gkimbwala@gmail.com
+
 // Create a smart candidate registration system for candidates who are registering for for elections(Part-I and Part - II)
 // Write a smart contract that will perform the following functions
 // 1. Create a function to register the new candidates with the following parameters(ID, name, state, funds, active(bool)) (Part - I)
