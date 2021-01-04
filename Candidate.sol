@@ -59,5 +59,20 @@ contract Candidate{
         
         return(candidate2.active);
     }
+    
+    function runCampaign(uint256 _id, uint256 campaign) public returns (bool){
+         if(checkCandidate(_id)){
+            candidate storage candidate1 = candidateID[_id];
+            if(campaign == 1)
+                candidate1.funds = candidate1.funds-10;
+            else if(campaign == 2)
+                candidate1.funds = candidate1.funds-20;
+        
+        }
+        else
+            return false;
+            
+        return true;
+    }
 }
 
